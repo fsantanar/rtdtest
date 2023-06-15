@@ -1,5 +1,7 @@
 def square(x):
     """
+    ADDING TEST TEXT
+    
     This function returns the square of a number.
 
     Parameters:

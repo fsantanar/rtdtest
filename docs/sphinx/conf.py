@@ -14,8 +14,9 @@ extensions = [
 project = 'Read The Docs Test'
 author = 'Felipe Santana'
 
-# -- General configuration ---------------------------------------------------
-
-# Add any necessary general configurations
 
 
+# -- Options for HTML output -------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+
+html_theme = 'sphinx_rtd_theme'

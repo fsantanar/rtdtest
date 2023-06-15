@@ -4,13 +4,20 @@
 Welcome to My Project's documentation!
 ======================================
 
-.. automodule:: mymodule
+Introduction
+============
+
+.. include:: Introduction.rst
+
+Package Content
+===============
+
+.. automodule:: cpu_health
    :members:
 
-Indices and Tables
-==================
+Indices 
+========
 
 * :ref:`genindex`
 * :ref:`modindex`
-* :ref:`search`
 

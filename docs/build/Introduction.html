@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Python Module Index &mdash; Read The Docs Test  documentation</title>
+  <title>Overview &mdash; Read The Docs Test  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -17,14 +18,7 @@
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
- 
-
-    <script>
-      DOCUMENTATION_OPTIONS.COLLAPSE_INDEX = true;
-    </script>
-
-
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,7 +41,12 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
-              <div class="local-toc"></div>
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Overview</a></li>
+<li><a class="reference internal" href="#goals">Goals</a></li>
+<li><a class="reference internal" href="#results">Results</a></li>
+</ul>
+</div>
         </div>
       </div>
     </nav>
@@ -62,8 +61,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Python Module Index</li>
+      <li class="breadcrumb-item active">Overview</li>
       <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Introduction.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -71,23 +71,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-
-   <h1>Python Module Index</h1>
-
-   <div class="modindex-jumpbox">
-   <a href="#cap-c"><strong>c</strong></a>
-   </div>
-
-   <table class="indextable modindextable">
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-c"><td></td><td>
-       <strong>c</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="index.html#module-cpu_health"><code class="xref">cpu_health</code></a></td><td>
-       <em></em></td></tr>
-   </table>
+  <section id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h1>
+<p>The CPU Health Checks package is designed to perform various CPU health checks on any platform (Linux, MacOS, Windows). It provides a set of functionalities to monitor pending reboots, disk space availability, idle CPU usage, network connection status, download speed, latency, and battery charge. The package consists of three modules: <cite>cpu_health.py</cite>, <cite>utilities.py</cite>, and <cite>test_checks.py</cite>.</p>
+</section>
+<section id="goals">
+<h1>Goals<a class="headerlink" href="#goals" title="Permalink to this heading"></a></h1>
+<p>The main goals of the CPU Health Checks package are:</p>
+<ul class="simple">
+<li><p>Perform comprehensive CPU health checks across different platforms.</p></li>
+<li><p>Provide an easy-to-use interface to monitor critical aspects of CPU health.</p></li>
+<li><p>Allow flexibility by enabling users to override default configuration parameters.</p></li>
+<li><p>Facilitate automation by providing a main function that performs all the health checks.</p></li>
+<li><p>Storing results on log files to check for trends in time and possible performance outliers.</p></li>
+</ul>
+</section>
+<section id="results">
+<h1>Results<a class="headerlink" href="#results" title="Permalink to this heading"></a></h1>
+<p>Each check function returns True if the check passed (for example if there is enough disk space),
+and False otherwise. Calling the main() wrapper function in cpu_health.py returns a dictionary
+Where the keys are the name of the checks performed and the values are the result of the
+corresponding test.</p>
+<p>All the general information and timestamps are written into a general log file, and
+another log file dedicated only to monitor the internet download speed.</p>
+<p>Finally the functions print colored messages on screen to clearly highlight when the checks passed,
+when they didn’t (providing extra information on why the didn’t), and when the usage, file content,
+or input parameters raised an exception that prevented the check to be performed.</p>
+</section>
 
 
            </div>

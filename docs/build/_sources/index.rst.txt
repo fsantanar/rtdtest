@@ -1,8 +1,8 @@
 .. My Project documentation master file, created by
    sphinx-quickstart on Tue Jun 15 2023.
 
-Welcome to My Project's documentation!
-======================================
+CPU RTD Test documentation
+===========================
 
 Introduction
 ============
@@ -12,7 +12,16 @@ Introduction
 Package Content
 ===============
 
+cpu_health Main Module
+-----------------------
+
 .. automodule:: cpu_health
+   :members:
+
+utilities Complementary Module 
+-------------------------------
+
+.. automodule:: utilities
    :members:
 
 Indices 

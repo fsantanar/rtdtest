@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to My Project’s documentation! &mdash; Read The Docs Test  documentation</title>
+  <title>CPU RTD Test documentation &mdash; Read The Docs Test  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -42,16 +42,25 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to My Project’s documentation!</a></li>
+<li><a class="reference internal" href="#">CPU RTD Test documentation</a></li>
 <li><a class="reference internal" href="#introduction">Introduction</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#goals">Goals</a></li>
 <li><a class="reference internal" href="#results">Results</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#module-cpu_health">Package Content</a><ul>
+<li><a class="reference internal" href="#package-content">Package Content</a><ul>
+<li><a class="reference internal" href="#module-cpu_health">cpu_health Main Module</a><ul>
 <li><a class="reference internal" href="#cpu_health.cube"><code class="docutils literal notranslate"><span class="pre">cube()</span></code></a></li>
 <li><a class="reference internal" href="#cpu_health.square"><code class="docutils literal notranslate"><span class="pre">square()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-utilities">utilities Complementary Module</a><ul>
+<li><a class="reference internal" href="#utilities.load_configuration"><code class="docutils literal notranslate"><span class="pre">load_configuration()</span></code></a></li>
+<li><a class="reference internal" href="#utilities.print_message"><code class="docutils literal notranslate"><span class="pre">print_message()</span></code></a></li>
+<li><a class="reference internal" href="#utilities.run_command"><code class="docutils literal notranslate"><span class="pre">run_command()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#indices">Indices</a></li>
@@ -71,7 +80,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Welcome to My Project’s documentation!</li>
+      <li class="breadcrumb-item active">CPU RTD Test documentation</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,8 +90,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="welcome-to-my-project-s-documentation">
-<h1>Welcome to My Project’s documentation!<a class="headerlink" href="#welcome-to-my-project-s-documentation" title="Permalink to this heading"></a></h1>
+  <section id="cpu-rtd-test-documentation">
+<h1>CPU RTD Test documentation<a class="headerlink" href="#cpu-rtd-test-documentation" title="Permalink to this heading"></a></h1>
 </section>
 <section id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h1>
@@ -114,8 +123,10 @@ when they didn’t (providing extra information on why the didn’t), and when t
 or input parameters raised an exception that prevented the check to be performed.</p>
 </section>
 </section>
+<section id="package-content">
+<h1>Package Content<a class="headerlink" href="#package-content" title="Permalink to this heading"></a></h1>
 <section id="module-cpu_health">
-<span id="package-content"></span><h1>Package Content<a class="headerlink" href="#module-cpu_health" title="Permalink to this heading"></a></h1>
+<span id="cpu-health-main-module"></span><h2>cpu_health Main Module<a class="headerlink" href="#module-cpu_health" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="cpu_health.cube">
 <span class="sig-prename descclassname"><span class="pre">cpu_health.</span></span><span class="sig-name descname"><span class="pre">cube</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cpu_health.cube" title="Permalink to this definition"></a></dt>
@@ -140,6 +151,41 @@ or input parameters raised an exception that prevented the check to be performed
 </dl>
 </dd></dl>
 
+</section>
+<section id="module-utilities">
+<span id="utilities-complementary-module"></span><h2>utilities Complementary Module<a class="headerlink" href="#module-utilities" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="utilities.load_configuration">
+<span class="sig-prename descclassname"><span class="pre">utilities.</span></span><span class="sig-name descname"><span class="pre">load_configuration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utilities.load_configuration" title="Permalink to this definition"></a></dt>
+<dd><p>Load configuration from a YAML file based on the specified mode.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>config_file (str): The path to the configuration file.
+config_mode (str): The mode to select from the configuration file.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict or None: The configuration dictionary for the given mode, or None if an error occurs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utilities.print_message">
+<span class="sig-prename descclassname"><span class="pre">utilities.</span></span><span class="sig-name descname"><span class="pre">print_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_line</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utilities.print_message" title="Permalink to this definition"></a></dt>
+<dd><p>Print a message in green color.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utilities.run_command">
+<span class="sig-prename descclassname"><span class="pre">utilities.</span></span><span class="sig-name descname"><span class="pre">run_command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">command</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utilities.run_command" title="Permalink to this definition"></a></dt>
+<dd><p>Run a command in the shell and capture the output.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>command (str): The command to run.</p>
+</dd>
+<dt>Returns:</dt><dd><p>CompletedProcess: The result of running the command.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 </section>
 <section id="indices">
 <h1>Indices<a class="headerlink" href="#indices" title="Permalink to this heading"></a></h1>

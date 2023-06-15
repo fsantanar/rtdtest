@@ -6,4 +6,4 @@ version: 2
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
-  configuration: docs/shpinx/conf.py
+  configuration: docs/sphinx/conf.py

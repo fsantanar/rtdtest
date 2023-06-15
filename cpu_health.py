@@ -1,3 +1,5 @@
+import rtdtest.utilities as utilities
+
 def square(x):
     """    
     This function returns the square of a number.
@@ -22,3 +24,6 @@ def cube(x):
     """
     return x ** 3
 
+if __name__ == '__main__':
+    print('running directly')
+    print(utilities.run_command('ls').stdout)

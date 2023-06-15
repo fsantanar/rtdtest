@@ -5,19 +5,9 @@
 # Date: 2023-06-07
 # Filename: utilities.py
 # License: MIT License
-import heapq
-import logging
-import logging.handlers
-import os
-import platform
-import re
 import subprocess
-import time
-import urllib.request
-
 import numpy as np
 import yaml
-from tqdm import tqdm
 
 def load_configuration(config_file, config_mode):
     """
@@ -59,11 +49,14 @@ def run_command(command):
     """
     return subprocess.run(command, shell=True, capture_output=True, text=True)
 
+def use_numpy(x):
+    """
+    The only purpose of this function is to use the Numpy module
 
-def print_message(message, new_line=True):
-    """ Print a message in green color."""
-    if new_line:
-        print(bcolors.OKGREEN + message + bcolors.ENDC)
-    else:
-        print(bcolors.OKGREEN + message + bcolors.ENDC, end='')
+    Args:
+        x (float): Input number
 
+    Returns:
+        float: The sin of the number
+    """
+    return np.sin(x)

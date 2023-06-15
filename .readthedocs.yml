@@ -7,4 +7,9 @@ version: 2
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
   configuration: docs/sphinx/conf.py
-  requirements_file: requirements.txt
+
+# Set the OS, Python version, and other tools you might need
+python:
+  version: 3.8
+  install:
+    - requirements: requirements.txt

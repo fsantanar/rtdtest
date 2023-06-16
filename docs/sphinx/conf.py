@@ -2,6 +2,7 @@ import os
 import sys
 from pathlib import Path
 
+sys.path.insert(0, os.path.abspath('../..'))
 sys.path.insert(0, Path(os.path.abspath(__file__)).parent.parent.parent.parent.absolute())
 
 extensions = [

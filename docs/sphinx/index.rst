@@ -15,13 +15,13 @@ Package Content
 cpu_health Main Module
 -----------------------
 
-.. automodule:: rtdtest.cpu_health
+.. automodule:: src.cpu_health
    :members:
 
 utilities Complementary Module 
 -------------------------------
 
-.. automodule:: rtdtest.utilities
+.. automodule:: src.utilities
    :members:
 
 Indices 

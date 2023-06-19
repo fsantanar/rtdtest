@@ -1,3 +1,6 @@
 .DS_STORE
 __pycache__/
 docs/build/
+build/
+rtdtest.egg-info/
+Src/rtdtest.egg-info/

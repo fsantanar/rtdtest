@@ -26,4 +26,5 @@ def cube(x):
 
 if __name__ == '__main__':
     print('running directly')
+    print('This is the output of ls in this folder')
     print(utilities.run_command('ls').stdout)

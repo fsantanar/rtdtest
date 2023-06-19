@@ -24,12 +24,6 @@ utilities Complementary Module
 .. automodule:: rtdtest.utilities
    :members:
 
-test_checks Test Module
------------------------
-
-.. automodule:: tests.test_checks
-   :members:
-
 Indices 
 ========
 
